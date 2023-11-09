@@ -8,16 +8,20 @@
 
 <AnchorPane prefHeight="587.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainController">
     <Button fx:id="btnSearch" layoutX="562.0" layoutY="21.0" onAction="#Search" prefHeight="26.0" prefWidth="108.0" text="Search">Click me!</Button>
-   <ListView fx:id="listAllWords" layoutX="26.0" layoutY="76.0" prefHeight="496.0" prefWidth="200.0" />
-   <TextField layoutX="26.0" layoutY="21.0" prefHeight="26.0" prefWidth="521.0" />
+   <ListView fx:id="listAllWords" layoutX="26.0" layoutY="76.0" prefHeight="458.0" prefWidth="200.0" />
+   <TextField fx:id="txtInput" layoutX="26.0" layoutY="21.0" prefHeight="26.0" prefWidth="521.0" />
    <ListView fx:id="listA" layoutX="251.0" layoutY="76.0" prefHeight="200.0" prefWidth="200.0" />
    <ListView fx:id="listN" layoutX="471.0" layoutY="76.0" prefHeight="200.0" prefWidth="200.0" />
    <Button fx:id="btnReadA" layoutX="252.0" layoutY="284.0" onAction="#ReadA" prefHeight="26.0" prefWidth="200.0" text="Read A" />
    <Button fx:id="btnReadN" layoutX="470.0" layoutY="284.0" onAction="#ReadN" prefHeight="26.0" prefWidth="200.0" text="Read N" />
-   <ListView fx:id="listHistory" layoutX="250.0" layoutY="339.0" prefHeight="200.0" prefWidth="419.0" />
-   <Button fx:id="btnClearHistory" layoutX="251.0" layoutY="546.0" onAction="#ClearHistory" prefHeight="26.0" prefWidth="419.0" text="Clear History" />
+   <ListView fx:id="listHistory" layoutX="250.0" layoutY="339.0" prefHeight="169.0" prefWidth="419.0" />
+   <Button fx:id="btnClearHistory" layoutX="250.0" layoutY="508.0" onAction="#ClearHistory" prefHeight="26.0" prefWidth="419.0" text="Clear History" />
    <Label layoutX="26.0" layoutY="59.0" text="Words" />
    <Label layoutX="252.0" layoutY="59.0" text="Words Beginning with: A" />
    <Label layoutX="471.0" layoutY="59.0" text="Words Beginning with: N" />
    <Label layoutX="250.0" layoutY="313.0" prefHeight="26.0" prefWidth="200.0" text="History" />
+   <Label layoutX="26.0" layoutY="543.0" text="Total word count: " />
+   <Label fx:id="lblWordCount" layoutX="142.0" layoutY="543.0" text="Label" />
+   <Label layoutX="257.0" layoutY="552.0" text="Search result: " />
+   <Label fx:id="lblFoundNotFound" layoutX="352.0" layoutY="552.0" text="Label" />
 </AnchorPane>
