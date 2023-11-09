@@ -12,7 +12,7 @@ public class DataAccess {
     public ObservableList<String> getWordsFromTextFile() {
         ObservableList<String> words = FXCollections.observableArrayList();
         try {
-            BufferedReader br = new BufferedReader(new FileReader("/Users/thomasolesen/IdeaProjects/WordSearch1/resources/WordsFromMoodle.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("C:\\Codeing\\Coding School\\WordSearch\\resources/WordsFromMoodle.txt"));
             String line;
             while ((line = br.readLine()) != null) {
                 words.add(line);
